@@ -1,0 +1,215 @@
+@import './modules/nullStyle.scss';
+@import './modules/fonts.scss';
+@import './modules/variables.scss';
+@import './modules/bootstrap.scss';
+
+.section-items {
+  flex: 1 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto 1fr;
+  margin: $marginContent;
+  padding: 0 $indentBig;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__sub-title {
+
+
+    &_center {
+      margin-top: $indent;
+      margin-bottom: $indent;
+      text-align: center;
+    }
+
+    &_center-items {
+      font-family: $medium;
+    }
+
+    &_left {
+      text-align: left;
+    }
+
+    &_medium {}
+  }
+
+  &__text {
+    &_end {
+      align-self: flex-start;
+      margin-bottom: $indent;
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: $gapContent;
+    padding: $indentBig 0;
+  }
+
+  &__column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12vw;
+    text-align: center;
+  }
+
+  &__sub-column {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+
+  &__image {
+    padding: 0 $indent;
+    align-self: center;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__sub-title_medium {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  &__sub-title_row {
+    margin: $indent 0 $indentSmall 0;
+  }
+
+  &__text_medium {
+    font-family: $medium;
+  }
+}
+
+@media (max-width: 460px) {
+  .section-items {
+    margin: $indent $indentSmall;
+    padding: 0;
+
+    &__body {
+      display: grid;
+      grid-template-columns: 10vw 1fr 1fr 10vw;
+      padding: 0;
+      gap: $indent;
+    }
+
+    &__column {
+      grid-template-rows: 30vw;
+
+      &_first {
+        text-align: center;
+        padding: 20px 0px 0px 0px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+
+      &_second {
+        text-align: center;
+        padding: 20px 0px 0px 0px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+
+      &_third {
+        text-align: center;
+        padding: 20px 0px 0px 0px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+    }
+
+    &__sub-column {
+
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    &__sub-title {
+
+      &_center {
+        margin-top: $indent;
+        margin-bottom: $indent;
+        text-align: center;
+      }
+
+      &_center-items {
+        font-size: calc(12px + 0.6vw);
+      }
+
+      &_medium {
+        grid-column-start: 1;
+        grid-column-end: 5;
+      }
+    }
+  }
+}
+
+@media (min-width: 461px) and (max-width: 767px) {
+  .section-items {
+    margin: $indentBig;
+
+    &__body {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 0;
+      gap: $indent;
+    }
+
+    &__column {
+      grid-template-rows: 26vw;
+
+      &_first {
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+
+      &_second {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      &_third {
+        grid-column-start: 3;
+        grid-column-end: 5;
+      }
+    }
+
+    &__sub-column {
+
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    &__sub-title {
+
+      &_center {
+        margin-top: $indent;
+        margin-bottom: $indent;
+        text-align: center;
+      }
+
+      &_center-items {
+        font-size: calc(12px + 0.6vw);
+      }
+
+      &_medium {
+        grid-column-start: 1;
+        grid-column-end: 5;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section-items {
+    margin: $indentBig;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-items {}
+}

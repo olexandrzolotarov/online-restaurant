@@ -1,0 +1,55 @@
+@import '../modules/nullStyle.scss';
+@import '../modules/fonts.scss';
+@import '../modules/variables.scss';
+@import '../modules/bootstrap.scss';
+
+.menu {
+  position: sticky;
+  z-index: 1;
+  top: 80px;
+  background-color: #000000;
+  padding: 0 $marginContent;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 1 0 auto;
+    display: flex;
+    text-align: center;
+  }
+
+  &__link {
+    width: 100%;
+    color: $yellow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &_active {
+      background-color: #d9d9d93b;
+    }
+  }
+
+  &__link:hover {
+    cursor: pointer;
+    background-color: #d9d9d915;
+  }
+}
+
+@media (max-width: 460px) {
+  .menu {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 1023px) {
+  .menu {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+@media (min-width: 1024px) {}

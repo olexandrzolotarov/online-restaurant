@@ -1,0 +1,126 @@
+@media (max-width: 767px) {
+  .h1Big {
+    font-size: calc(25px + 25.5 * ((40vw - 320px) / 1280));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1480px) {
+  .h1Big {
+    font-size: calc(25px + 15 * (1vw / 1280));
+  }
+}
+
+@media (min-width: 1481px) {
+  .h1Big {
+    font-size: calc(25px + 15 * (40vw / 1280));
+  }
+}
+
+@media (max-width: 767px) {
+  .h3 {
+    font-size: calc(15px + 8.5 * ((40vw - 320px) / 1280));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1480px) {
+  .h3 {
+    font-size: calc(15px + 5 * (1vw / 1280));
+  }
+}
+
+@media (min-width: 1481px) {
+  .h3 {
+    font-size: calc(15px + 5 * (40vw / 1280));
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: calc(20px + 20.4 * ((40vw - 320px) / 1280));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1480px) {
+  h1 {
+    font-size: calc(20px + 12 * (1vw / 1280));
+  }
+}
+
+@media (min-width: 1481px) {
+  h1 {
+    font-size: calc(20px + 12 * (40vw / 1280));
+  }
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: calc(18px + 13.6 * ((40vw - 320px) / 1280));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1480px) {
+  h2 {
+    font-size: calc(18px + 8 * (1vw / 1280));
+  }
+}
+
+@media (min-width: 1481px) {
+  h2 {
+    font-size: calc(18px + 8 * (40vw / 1280));
+  }
+}
+
+@media (max-width: 767px) {
+  h3 {
+    font-size: calc(15px + 13.6 * ((40vw - 320px) / 1280));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1480px) {
+  h3 {
+    font-size: calc(15px + 8 * (1vw / 1280));
+  }
+}
+
+@media (min-width: 1481px) {
+  h3 {
+    font-size: calc(15px + 8 * (40vw / 1280));
+  }
+}
+
+@media (max-width: 767px) {
+  h4 {
+    font-size: calc(14px + 10.2 * ((40vw - 320px) / 1280));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1480px) {
+  h4 {
+    font-size: calc(14px + 6 * (1vw / 1280));
+  }
+}
+
+@media (min-width: 1481px) {
+  h4 {
+    font-size: calc(14px + 6 * (40vw / 1280));
+  }
+}
+
+@media (max-width: 767px) {
+  h5 {
+    font-size: calc(13px + 8.5 * ((40vw - 320px) / 1280));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1480px) {
+  h5 {
+    font-size: calc(13px + 5 * (1vw / 1280));
+  }
+}
+
+@media (min-width: 1481px) {
+  h5 {
+    font-size: calc(13px + 5 * (40vw / 1280));
+  }
+}
+/*# sourceMappingURL=bootstrap.css.map */

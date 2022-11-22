@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/mini__logo.png" type="image/png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <title>Палки</title>
+</head>
+
+<body>
+
+  <main class="main">
+    <header class="main__header header">
+      <div class="header__interface interface">
+        <div class="interface__logo logo">
+          <a href="#">
+            <img src="./img/logo.png" alt="logo">
+          </a>
+        </div>
+        <ul class="interface__buttons buttons">
+          <li><a class="buttons__link buttons__link_yellow" href="#">
+              <h3>Меню</h3>
+            </a></li>
+          <li><a class="buttons__link buttons__link_yellow" href="#">
+              <h3>Акции</h3>
+            </a></li>
+          <li><a class="buttons__link buttons__link_white" href="#">
+              <h3>Доставка</h3>
+            </a></li>
+          <li><a class="buttons__link buttons__link_white" href="#">
+              <h3>Оплата</h3>
+            </a></li>
+          <li><a class="buttons__link buttons__link_white" href="#">
+              <h3>Контакты</h3>
+            </a></li>
+          <li><a class="buttons__link buttons__link_white" href="#">
+              <h3>Личный кабинет</h3>
+            </a></li>
+        </ul>
+        <div class="interface__search top-search">
+          <div class="top-search__main">
+            <div class="top-search__top">
+              <img class="top-search__image" src="./img/search__white.png" alt="search__white">
+              <input class="top-search__input" type="text">
+            </div>
+            <button type="button" class="top-search__down">
+              <img class="top-search__image" src="./img/search__yellow.png" alt="search__yellow">
+            </button>
+          </div>
+        </div>
+        <div class="interface__cart cart">
+          <input class="input-cart-data" type="hidden" name="cart">
+          <button type="submit" class="cart__link">
+            <img class="cart__image" src="./img/cart.png" alt="cart">
+            <p class="cart__digit cart__digit_show"><span class="cart__digit-item">0</span></p>
+          </button>
+        </div>
+        <button type="button" class="interface__mobileBatton mobile-button">
+          <img class="mobile-button__image" src="./img/menuButton.png" alt="menuButton">
+        </button>
+      </div>
+
+
+      <div class="header__search-list search-list">
+        <div class="search-list__list">
+          <div class="search-list__search-panel search-panel">
+            <div class="search-panel__row">
+              <img class="search-panel__image" src="./img/searchBlack.png" alt="searchBlack">
+              <input class="search-panel__input" type="text">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__mobile-menu mobile-menu">
+        <div class="mobile-menu__body">
+          <div class="mobile-menu__image">
+            <a href="#" class="mobile-menu__image-cart-link">
+              <img class="mobile-menu__sub-image" src="./img/cartBlack.png" alt="cartBlack">
+              <p class="mobile-menu__image-cart-quantity"><span class="digit-mobile-item">0</span></p>
+            </a>
+            <button type="button" class="mobile-menu__image-link">
+              <img class="mobile-menu__sub-image" src="./img/close.png" alt="close">
+            </button>
+          </div>
+          <div class="mobile-menu__items">
+            <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__title mobile-menu__title_first">
+                <h3>Меню</h3>
+              </a>
+              <ul class="mobile-menu__sub-item">
+                <li class="mobile-menu__sub-title mobile-menu__sub-title_active mobile-menu__sub-title_1" data-id="1">
+                  <div class="mobile-menu__sub-link">
+                    <h3>Запеченные</h3>
+                  </div>
+                </li>
+                <li class="mobile-menu__sub-title mobile-menu__sub-title_2" data-id="2">
+                  <div class="mobile-menu__sub-link">
+                    <h3>Маки</h3>
+                  </div>
+                </li>
+                <li class="mobile-menu__sub-title mobile-menu__sub-title_3" data-id="3">
+                  <div class="mobile-menu__sub-link">
+                    <h3>Роллы</h3>
+                  </div>
+                </li>
+                <li class="mobile-menu__sub-title mobile-menu__sub-title_4" data-id="4">
+                  <div class="mobile-menu__sub-link">
+                    <h3>Темпура</h3>
+                  </div>
+                </li>
+                <li class="mobile-menu__sub-title mobile-menu__sub-title_5" data-id="5">
+                  <div class="mobile-menu__sub-link">
+                    <h3>Сеты</h3>
+                  </div>
+                </li>
+                <li class="mobile-menu__sub-title mobile-menu__sub-title_6" data-id="6">
+                  <div class="mobile-menu__sub-link">
+                    <h3>Пицца</h3>
+                  </div>
+                </li>
+                <li class="mobile-menu__sub-title mobile-menu__sub-title_7" data-id="7">
+                  <div class="mobile-menu__sub-link">
+                    <h3>Супы и бургеры</h3>
+                  </div>
+                </li>
+                <li class="mobile-menu__sub-title mobile-menu__sub-title_8" data-id="8">
+                  <div class="mobile-menu__sub-link">
+                    <h3>Фри</h3>
+                  </div>
+                </li>
+                <li class="mobile-menu__sub-title mobile-menu__sub-title_9" data-id="9">
+                  <div class="mobile-menu__sub-link">
+                    <h3>Соусы</h3>
+                  </div>
+                </li>
+                <li class="mobile-menu__sub-title mobile-menu__sub-title_10" data-id="10">
+                  <div class="mobile-menu__sub-link">
+                    <h3>Добавки</h3>
+                  </div>
+                </li>
+                <li class="mobile-menu__sub-title mobile-menu__sub-title_11" data-id="11">
+                  <div class="mobile-menu__sub-link">
+                    <h3>Напитки</h3>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__title">
+                <h3>Личный кабинет</h3>
+              </a>
+            </div>
+            <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__title">
+                <h3>Акции</h3>
+              </a>
+            </div>
+            <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__title">
+                <h3>Доставка</h3>
+              </a>
+            </div>
+            <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__title">
+                <h3>Оплата</h3>
+              </a>
+            </div>
+            <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__title">
+                <h3>Контакты</h3>
+              </a>
+            </div>
+            <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__title">
+                <h3>О нас</h3>
+              </a>
+            </div>
+            <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__title">
+                <h3>Обратная связь</h3>
+              </a>
+            </div>
+            <div class="mobile-menu__item">
+              <a href="#" class="mobile-menu__title">
+                <h3>Политика конфиденциальности</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__top-banner top-banner">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide">
+              <img class="top-banner__image" src="./img/banner_big__8.jpg" alt="banner_big__8">
+            </a>
+            <a href="#" class="swiper-slide">
+              <img class="top-banner__image" src="./img/banner_big__9.jpg" alt="banner_big__9">
+            </a>
+            <a href="#" class="swiper-slide">
+              <img class="top-banner__image" src="./img/banner_big__10.jpg" alt="banner_big__10">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div class="menu-line"></div>
+    </header>
+
+    <section class="main__section section">
+      <div class="section__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <div class="menu__link menu__link_1 menu__link_active" data-id="1">
+              <h3>Запеченные</h3>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu__link menu__link_2" data-id="2">
+              <h3>Маки</h3>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu__link menu__link_3" data-id="3">
+              <h3>Роллы</h3>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu__link menu__link_4" data-id="4">
+              <h3>Темпура</h3>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu__link menu__link_5" data-id="5">
+              <h3>Сеты</h3>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu__link menu__link_6" data-id="6">
+              <h3>Пицца</h3>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu__link menu__link_7" data-id="7">
+              <h3>Супы и бургеры</h3>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu__link menu__link_8" data-id="8">
+              <h3>Фри</h3>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu__link menu__link_9" data-id="9">
+              <h3>Соусы</h3>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu__link menu__link_10" data-id="10">
+              <h3>Добавки</h3>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu__link menu__link_11" data-id="11">
+              <h3>Напитки</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+
+      <div class="section__items section-items">
+        <div class="section-items__item">
+          <a href="#" class="section-items__photo">
+            <img src="../img/food__295.png" onError="this.src=`./img/food__empty.jpg`" alt="food__' . $value">
+          </a>
+          <h3 class="section-items__title">Калифорния запеченная угорь</h3>
+          <h4 class="section-items__discription">рис, нори, угорь, огурец, майонез, масаго, смесь для запекания</h4>
+          <h3 class="section-items__price">129₴</h3>
+          <button type="button" class="section-items__buy buy-button">
+            <h3>КУПИТЬ</h3>
+          </button>
+        </div>
+        <div class="section-items__item">
+          <a href="#" class="section-items__photo">
+            <img src="../img/food__296.png" onError="this.src=`./img/food__empty.jpg`" alt="food__' . $value">
+          </a>
+          <h3 class="section-items__title">Калифорния лава</h3>
+          <h4 class="section-items__discription">рис, нори, снежный краб, огурец, майонез, икра масаго, паста лава</h4>
+          <h3 class="section-items__price">149₴</h3>
+          <button type="button" class="section-items__buy buy-button">
+            <h3>КУПИТЬ</h3>
+          </button>
+        </div>
+        <div class="section-items__item">
+          <a href="#" class="section-items__photo">
+            <img src="../img/food__297.png" onError="this.src=`./img/food__empty.jpg`" alt="food__' . $value">
+          </a>
+          <h3 class="section-items__title">Лава Лава</h3>
+          <h4 class="section-items__discription">рис, нори, лосось, лук зеленый, паста лава, соус терияки</h4>
+          <h3 class="section-items__price">119₴</h3>
+          <button type="button" class="section-items__buy buy-button">
+            <h3>КУПИТЬ</h3>
+          </button>
+        </div>
+        <div class="section-items__item">
+          <a href="#" class="section-items__photo">
+            <img src="../img/food__298.png" onError="this.src=`./img/food__empty.jpg`" alt="food__' . $value">
+          </a>
+          <h3 class="section-items__title">Острая Креветка</h3>
+          <h4 class="section-items__discription">рис, нори, огурец, тигровая креветка, шапка спайси, соус унаги</h4>
+          <h3 class="section-items__price">119₴</h3>
+          <button type="button" class="section-items__buy buy-button">
+            <h3>КУПИТЬ</h3>
+          </button>
+        </div>
+        <div class="section-items__item">
+          <a href="#" class="section-items__photo">
+            <img src="../img/food__299.png" onError="this.src=`./img/food__empty.jpg`" alt="food__' . $value">
+          </a>
+          <h3 class="section-items__title">Острый Краб с мидией</h3>
+          <h4 class="section-items__discription">рис, нори, огурец, снежный краб, мидии, шапка спайси, соус унаги</h4>
+          <h3 class="section-items__price">129₴</h3>
+          <button type="button" class="section-items__buy buy-button">
+            <h3>КУПИТЬ</h3>
+          </button>
+        </div>
+        <div class="section-items__item">
+          <a href="#" class="section-items__photo">
+            <img src="../img/food__300.png" onError="this.src=`./img/food__empty.jpg`" alt="food__' . $value">
+          </a>
+          <h3 class="section-items__title">Сливочный Краб</h3>
+          <h4 class="section-items__discription">рис, нори, снежный краб, сыр сливочный, смесь для запекания</h4>
+          <h3 class="section-items__price">99₴</h3>
+          <button type="button" class="section-items__buy buy-button">
+            <h3>КУПИТЬ</h3>
+          </button>
+        </div>
+        <div class="section-items__item">
+          <a href="#" class="section-items__photo">
+            <img src="../img/food__301.png" onError="this.src=`./img/food__empty.jpg`" alt="food__' . $value">
+          </a>
+          <h3 class="section-items__title">Сливочный Лосось</h3>
+          <h4 class="section-items__discription">рис, нори, лосось, сыр сливочный, смесь для запекания</h4>
+          <h3 class="section-items__price">129₴</h3>
+          <button type="button" class="section-items__buy buy-button">
+            <h3>КУПИТЬ</h3>
+          </button>
+        </div>
+        <div class="section-items__item">
+          <a href="#" class="section-items__photo">
+            <img src="../img/food__302.png" onError="this.src=`./img/food__empty.jpg`" alt="food__' . $value">
+          </a>
+          <h3 class="section-items__title">Сливочный Угорь</h3>
+          <h4 class="section-items__discription">рис, нори, угорь, сыр сливочный, смесь для запекания</h4>
+          <h3 class="section-items__price">109₴</h3>
+          <button type="button" class="section-items__buy buy-button">
+            <h3>КУПИТЬ</h3>
+          </button>
+        </div>
+      </div>
+
+      <div class="section__warning warning">
+        <div class="warning__message">
+          <h3>Внешний вид продукции может отличаться от изображений, представленных на сайте.</h3>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main__footer footer">
+      <div class="footer__logo foot-logo">
+        <div class="foot-logo__image">
+          <img src="./img/logoFooter.png" alt="logoFooter">
+        </div>
+        <h5 class="foot-logo__text">
+          Добро пожаловать! Мы хотим накормить вас вкусно, сытно и качественно! Наш продукт приедет к вам домой ещё
+          горячими.
+          Полноценный вкусный обед с нами – это просто, быстро и недорого! Приятного аппетита и до новых встреч!
+        </h5>
+      </div>
+      <div></div>
+      <div class="footer__networks networks">
+        <ul class="networks__list">
+          <li class="networks__item">
+            <a class="networks__link" href="#"><img src="./img/twitter.png" alt="twitter"></a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__link" href="#"><img src="./img/whatsApp.png" alt="whatsApp"></a>
+          </li>
+          <li class="networks__item">
+            <a class="networks__link" href="#"><img src="./img/mail.png" alt="mail"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <ul class="footer__column footer__column_1">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <h3>О нас</h3>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <h3>Меню</h3>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <h3>Акции</h3>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <h3>Доставка</h3>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <h3>Оплата</h3>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__column footer__column_2">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <h3>Личный кабинет</h3>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <h3>Контакты</h3>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <h3>Обратная связь</h3>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <h3>Политика конфиденциальности</h3>
+            </a>
+          </li>
+          <li class="footer__item">
+            <h3 class="footer__text">Две палки, 2022</h3>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./swiper-bundle.js"></script>
+  <script src="./slider.js"></script>
+  <script src="./app.js" type="module"></script>
+
+</body>
+
+</html>

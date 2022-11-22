@@ -1,0 +1,38 @@
+@import '../modules/nullStyle.scss';
+@import '../modules/fonts.scss';
+@import '../modules/variables.scss';
+@import '../modules/bootstrap.scss';
+
+.section-items {
+  flex: 1 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content;
+  gap: $gapContent;
+  margin: $marginContent;
+
+  &__item {}
+
+  &__image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .section-items {
+    grid-template-columns: 1fr;
+
+    gap: $gapContentS;
+    margin: $indent $indentSmall;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 1023px) {
+  .section-items {
+    gap: $gapContentS;
+    margin: $indentBig;
+  }
+}
+
+@media (min-width: 1024px) {}

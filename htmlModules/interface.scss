@@ -1,0 +1,334 @@
+@import '../modules/nullStyle.scss';
+@import '../modules/fonts.scss';
+@import '../modules/variables.scss';
+@import '../modules/bootstrap.scss';
+
+
+.interface {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  height: $hh;
+  background-color: $black;
+  padding: 0 calc(10px + 1vw);
+
+  display: grid;
+  grid-template-columns: calc(120px + 7vw) auto calc(21vw - 70px) max-content;
+  gap: calc(5px + 2vw);
+
+  align-items: center;
+
+  &__logo {
+    & img {
+      width: 100%;
+    }
+
+  }
+
+  &__buttons {
+    padding-right: calc(20vw - 250px);
+    display: flex;
+    justify-content: space-between;
+    gap: calc(3px + 1vw);
+  }
+
+  &__search {}
+
+  &__cart {}
+
+  &__mobileBatton {
+    display: none;
+  }
+}
+
+.logo {}
+
+.buttons {
+
+  &__link {}
+
+  &__link_yellow {
+    color: $yellow;
+
+    &:hover {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+
+  &__link_white {
+    color: $white;
+
+    &:hover {
+      color: $yellow;
+      text-decoration: underline;
+    }
+  }
+
+  &__search {}
+}
+
+.top-search {
+  &__main {}
+
+  &__top {
+    display: flex;
+    border: 2px solid $white;
+    padding: 7px 10px;
+    border-radius: 5vw;
+    gap: 9px;
+  }
+
+  &__image {}
+
+  &__input {
+    background-color: $black;
+    color: $white;
+    font-size: 16px;
+    width: 80%;
+  }
+
+  &__down {
+    display: none;
+  }
+}
+
+.cart {
+  position: relative;
+  height: 42px;
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image {
+    height: 42px;
+  }
+
+  &__digit {
+    border-radius: 20px;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 3px;
+    left: 30px;
+    color: $yellow;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__digit-item {
+    font-size: 20px;
+  }
+}
+
+.mobile-button {
+  &__image {}
+}
+
+@media (max-width: 460px) {
+  .interface {
+    height: $hhs;
+    padding: 0 calc(7px + 1vw);
+    grid-template-columns: calc(130px + 5vw) minmax(0px, 1fr) auto auto auto;
+
+    &__mobileBatton {
+      display: block;
+    }
+  }
+
+  .buttons {
+    &__link {
+      display: none;
+    }
+  }
+
+  .top-search {
+    &__main {}
+
+    &__top {
+      display: none;
+    }
+
+    &__image {}
+
+    &__input {}
+
+    &__down {
+      display: block;
+
+      & img {
+        height: $ichs;
+      }
+    }
+  }
+
+  .cart {
+    height: 30px;
+
+    &__link {}
+
+    &__image {
+      height: 30px;
+    }
+
+    &__digit {
+      font-size: 18px;
+      top: -3px;
+      left: 18px;
+    }
+
+    &__digit-item {
+      font-size: 18px;
+    }
+  }
+
+  .mobile-button {
+    height: calc($ichs - 6px);
+
+    &__image {
+      height: 100%;
+    }
+  }
+}
+
+@media (max-height: 460px) {
+  .interface {
+    height: $hhs;
+    padding: 0 calc(7px + 1vw);
+    grid-template-columns: calc(130px + 5vw) minmax(0px, 1fr) auto auto auto;
+
+    &__mobileBatton {
+      display: block;
+    }
+  }
+
+  .buttons {
+    &__link {
+      display: none;
+    }
+  }
+
+  .top-search {
+    &__main {}
+
+    &__top {
+      display: none;
+    }
+
+    &__image {}
+
+    &__input {}
+
+    &__down {
+      display: block;
+
+      & img {
+        height: $ichs;
+      }
+    }
+  }
+
+  .cart {
+    height: 30px;
+
+    &__link {}
+
+    &__image {
+      height: 30px;
+    }
+
+    &__digit {
+      top: -3px;
+      left: 18px;
+      font-size: 18px;
+    }
+
+    &__digit-item {
+      font-size: 18px;
+    }
+  }
+
+  .mobile-button {
+    height: calc($ichs - 6px);
+
+    &__image {
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: 461px) and (max-width: 1023px) {
+  .interface {
+    grid-template-columns: calc(150px + 5vw) 1fr auto auto auto;
+
+    &__mobileBatton {
+      display: block;
+    }
+  }
+
+  .buttons {
+    &__link {
+      display: none;
+    }
+  }
+
+  .top-search {
+    &__main {}
+
+    &__top {
+      display: none;
+    }
+
+    &__image {}
+
+    &__input {}
+
+    &__down {
+      display: block;
+
+      & img {
+        height: $ich;
+      }
+    }
+  }
+
+  .cart {
+    height: 34px;
+
+    &__link {}
+
+    &__image {
+      height: 34px;
+    }
+
+    &__digit {
+      font-size: 22px;
+      top: -1px;
+      left: 21px;
+    }
+  }
+
+  .mobile-button {
+    height: calc($ich - 7px);
+
+    &__image {
+      margin-top: 1px;
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1400px) {
+  .interface {
+    height: $hhb;
+  }
+}

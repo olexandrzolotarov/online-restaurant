@@ -1,0 +1,142 @@
+@import '../modules/nullStyle.scss';
+@import '../modules/fonts.scss';
+@import '../modules/variables.scss';
+@import '../modules/bootstrap.scss';
+
+
+.section-items {
+  flex: 1 0 auto;
+
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  grid-template-rows: max-content;
+  gap: $gapContentS;
+  margin: $marginContentS;
+
+  &__image {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content max-content;
+    gap: $indent;
+  }
+
+  &__title {}
+
+  &__text {}
+
+}
+
+.action-terms {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content max-content max-content max-content;
+  gap: $indent;
+
+  &__title {}
+
+  &__item {
+    position: relative;
+    margin-left: $marginContentS;
+    padding-left: 10px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 18px;
+      width: 3px;
+      background-color: $yellow;
+    }
+  }
+}
+
+.action-warning {
+  position: relative;
+
+  padding-top: calc(50px + 20%);
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100px + 30%);
+  }
+
+  &__item {
+    position: relative;
+
+    margin-bottom: $indent;
+    margin-left: calc($marginContent + $marginContent);
+    padding-left: 10px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 18px;
+      width: 3px;
+      background-color: $yellow;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .section-items {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    margin: $indent $indentSmall;
+
+    &__image {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  }
+
+  .action-warning {
+    padding-top: calc(50px + 10%);
+
+    &__image {
+      width: calc(50px + 20%);
+    }
+
+    &__item {
+      margin-left: calc(5px + 3vw);
+    }
+  }
+}
+
+@media (min-width: 461px) and (max-width: 1024px) {
+  .section-items {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    margin: $indentBig;
+
+    &__image {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  }
+
+  .action-warning {
+    padding-top: calc(50px + 10%);
+
+    &__image {
+      width: calc(50px + 20%);
+    }
+
+  }
+}
+
+@media (min-width: 1024px) {}

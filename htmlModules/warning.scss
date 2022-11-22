@@ -1,0 +1,18 @@
+@import '../modules/nullStyle.scss';
+@import '../modules/fonts.scss';
+@import '../modules/variables.scss';
+@import '../modules/bootstrap.scss';
+
+.warning {
+  flex: 0 0 auto;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+
+  &__message {
+    color: $yellow;
+    padding: 20px 10px;
+  }
+}

@@ -1,0 +1,65 @@
+@import '../modules/nullStyle.scss';
+@import '../modules/fonts.scss';
+@import '../modules/variables.scss';
+@import '../modules/bootstrap.scss';
+
+
+.top-banner {
+  position: relative;
+  background-color: $black;
+
+  &__image {
+    width: 100%;
+  }
+
+  &__left {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50px);
+  }
+
+  &__left-arrow {
+    height: 100px;
+    opacity: 60%;
+  }
+
+  &__right {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50px);
+  }
+
+  &__right-arrow {
+    height: 100px;
+    opacity: 60%;
+  }
+}
+
+@media (max-width: 460px) {
+  .top-banner {
+
+    &__left {
+      display: none;
+    }
+
+    &__right {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 461px) and (max-width: 1023px) {
+  .top-banner {
+    &__left {
+      display: none;
+    }
+
+    &__right {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1024px) {}

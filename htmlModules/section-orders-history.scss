@@ -1,0 +1,122 @@
+@import '../modules/nullStyle.scss';
+@import '../modules/fonts.scss';
+@import '../modules/variables.scss';
+@import '../modules/bootstrap.scss';
+
+
+.section-items {
+  flex: 1 0 auto;
+  margin: 2vw 10vw;
+
+  &__title {
+    text-align: center;
+    margin: $indent 0;
+  }
+
+  &__body {
+    display: grid;
+    gap: $gapContentS;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 3fr auto;
+  }
+
+  &__sub-title {
+    position: relative;
+    padding: $indentSmall 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: calc($indentSmall / 2);
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-color: $yellow;
+    }
+  }
+
+  &__order-summ {
+    position: relative;
+    padding: $indentSmall 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: calc($indentSmall / 2);
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background-color: $yellow;
+    }
+  }
+
+  &__positions-quantity {
+    font-family: $medium;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  &__positions-list {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  &__delivery-info {
+    margin-top: $indent;
+    font-family: $medium;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  &__delivery {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  &__comment {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
+@media (max-width: 460px) {
+  .section-items {
+    margin: $indent $indentSmall;
+
+    &__body {
+      gap: $gapContent;
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: 3fr 0;
+    }
+
+    &__sub-title {
+      &::before {
+        bottom: -2px;
+        background-color: $yellow;
+      }
+    }
+
+    &__order-summ {
+      grid-column-start: 1;
+      grid-column-end: 2;
+
+      &::before {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+@media (min-width: 461px) and (max-width: 1023px) {
+  .section-items {
+    margin: $indentBig;
+  }
+}
+
+@media (min-width: 1024px) {}

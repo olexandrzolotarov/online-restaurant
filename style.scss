@@ -1,0 +1,60 @@
+@import './modules/nullStyle.scss';
+@import './modules/fonts.scss';
+@import './modules/variables.scss';
+@import './modules/bootstrap.scss';
+
+body {
+  font-family: $regular;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+.main {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/pattern.jpg");
+    background-size: 500px;
+    opacity: 12%;
+    z-index: -5;
+  }
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__section {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+@import './htmlModules/interface.scss';
+
+@import './htmlModules/search-list.scss';
+
+@import './htmlModules/mobile-menu.scss';
+
+@import './htmlModules/top-banner.scss';
+
+
+@import './htmlModules/menu.scss';
+
+@import './htmlModules/section-menu-items.scss';
+
+@import './htmlModules/warning.scss';
+
+
+@import './htmlModules/footer.scss';

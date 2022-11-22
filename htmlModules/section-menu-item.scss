@@ -1,0 +1,252 @@
+@import '../modules/nullStyle.scss';
+@import '../modules/fonts.scss';
+@import '../modules/variables.scss';
+@import '../modules/bootstrap.scss';
+
+.section-items {
+  flex: 1 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content;
+  gap: $gapContent;
+  margin: 4vw 10vw;
+
+  & a {
+    color: $black;
+  }
+
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    gap: $indent;
+  }
+
+  &__toppings {
+    justify-self: flex-end;
+    align-self: flex-start;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+
+    grid-gap: $indent;
+  }
+
+
+
+  &__image {
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+
+  &__section-sub-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: $indentSmall;
+
+    grid-template-rows: max-content max-content max-content;
+  }
+
+  &__title {
+    font-family: $medium;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  &__discription {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  &__price {
+    align-self: center;
+    font-family: $medium;
+  }
+
+  &__buy {
+    font-family: $medium;
+    text-align: center;
+
+    border: 3px solid $yellow;
+    border-radius: 5vw;
+    padding: 3px 3px;
+
+    &:active {
+      background-color: $yellow;
+    }
+  }
+
+
+  &__section-properties {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content max-content;
+    gap: $indent;
+  }
+
+  .section-property {
+    position: relative;
+    padding-left: 10px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 18px;
+      width: 3px;
+      background-color: $yellow;
+    }
+  }
+
+  &__weight {}
+
+  &__quantity {}
+
+  &__calories {}
+
+  &__toppings-title {
+    font-family: $medium;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  &__toppings-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto auto;
+
+    gap: $indentSmall;
+  }
+
+  &__sub-image {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__sub-title {
+    font-family: $medium;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  &__sub-weight {}
+
+  &__sub-price {
+    font-family: $medium;
+    justify-self: end;
+  }
+
+  &__add {
+    font-family: $medium;
+    text-align: center;
+    align-self: center;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    border: 3px solid $yellow;
+    border-radius: 5vw;
+    padding: 3px 0;
+    width: 100%;
+
+    &:active {
+      background-color: $yellow;
+    }
+  }
+
+  .buy-button-toppings {
+    border: 3px solid $black;
+
+    &:active {
+      background-color: $yellow;
+      border: 3px solid $yellow;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .section-items {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    margin: $indent $indentSmall;
+
+    &__buy {
+      border: 1px solid $yellow;
+    }
+
+    &__add {
+      border: 1px solid $yellow;
+    }
+
+    .buy-button-toppings {
+      border: 1px solid $black;
+
+      &:active {
+        background-color: $yellow;
+        border: 1px solid $yellow;
+      }
+    }
+  }
+}
+
+@media (min-width: 461px) and (max-width: 1023px) {
+  .section-items {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    margin: $marginContent calc($marginContent + $marginContent);
+
+    &__toppings-item {
+      padding: 0 1vw;
+    }
+
+    &__item {
+      column-gap: $indent;
+      row-gap: $indentBig;
+    }
+
+    .buy-button-toppings {
+      padding: 6px 2px;
+    }
+
+    .buy-button {
+      padding: 6px 2px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 461px) and (max-width: 1461px) {
+  .section-items {
+    &__buy {
+      border: $borderM solid $yellow;
+    }
+
+    &__add {
+      border: $borderM solid $yellow;
+    }
+
+    .buy-button-toppings {
+      border: $borderM solid $black;
+
+      &:active {
+        background-color: $yellow;
+        border: $borderM solid $yellow;
+      }
+    }
+  }
+}

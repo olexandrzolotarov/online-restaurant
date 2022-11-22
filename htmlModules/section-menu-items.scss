@@ -1,0 +1,146 @@
+@import '../modules/nullStyle.scss';
+@import '../modules/fonts.scss';
+@import '../modules/variables.scss';
+@import '../modules/bootstrap.scss';
+
+.section-items {
+  flex: 1 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: max-content;
+  gap: $gapContent;
+  margin: $marginContent;
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    column-gap: 5px;
+
+    & h3 {
+      font-family: $medium;
+    }
+  }
+
+  &__photo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-bottom: calc(10px + 1vw);
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  &__discription {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    margin-bottom: calc(10px + 1vw);
+  }
+
+  &__price {
+    margin: 5px 2px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  &__buy {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 4px;
+    border-radius: 30px;
+    border: 3px solid $yellow;
+    color: $black;
+
+    &:active {
+      background-color: $yellow;
+    }
+  }
+}
+
+.empty-category {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    max-width: 80vw;
+  }
+}
+
+
+@media (max-width: 460px) {
+  .empty-category {
+    & h1 {
+      padding-bottom: 10vh;
+    }
+  }
+
+  .section-items {
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: $gapContentS;
+    row-gap: calc($gapContentS + 15px);
+
+    margin: $indent $indentSmall;
+
+    &__buy {
+      border: 1px solid $yellow;
+    }
+
+    &__item {
+      grid-template-rows: auto 1fr auto;
+
+      & h3 {
+        font-family: $regular;
+      }
+    }
+
+    &__title {
+      margin-bottom: calc(5px + 1vw);
+    }
+
+    &__discription {
+      display: none;
+    }
+
+  }
+}
+
+@media (min-width: 461px) and (max-width: 1023px) {
+  .section-items {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: $gapContentS;
+    margin: $indentBig;
+
+    &__title {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 461px) and (max-width: 1461px) {
+  .section-items {
+    &__buy {
+      border: $borderM solid $yellow;
+    }
+  }
+}

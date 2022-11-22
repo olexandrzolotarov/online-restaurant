@@ -1,0 +1,124 @@
+@import './modules/nullStyle.scss';
+@import './modules/fonts.scss';
+@import './modules/variables.scss';
+@import './modules/bootstrap.scss';
+
+.section-items {
+  flex: 1 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: $marginContent;
+
+  &__form {
+    align-self: flex-start;
+
+    display: grid;
+    grid-template-columns: 4fr 1fr 2fr 1fr 4fr;
+    gap: $indent;
+  }
+
+  &__title {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    text-align: center;
+  }
+
+
+  &__item {
+    border: 3px solid $yellow;
+    padding: calc(3px + 0.5vw) calc(6px + 0.9vw);
+    border-radius: calc(6px + 1.1vw);
+
+    & input {
+      width: 100%;
+    }
+
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+
+  &__full-name {}
+
+  &__tel {}
+
+  &__message {
+    & textarea {
+      width: 100%;
+      min-height: 100px;
+      resize: none;
+    }
+  }
+
+  &__send {
+    margin-top: $indent;
+    width: 100%;
+    border: 3px solid $gray;
+    color: $gray;
+    border-radius: 15px;
+    padding: 5px 10px;
+
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    &:active {
+      background-color: $yellow;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .section-items {
+    margin: $indent $indentSmall;
+
+    &__item {
+      border: 1px solid $yellow;
+    }
+
+    &__send {
+      border: 1px solid $gray;
+    }
+
+    &__form {
+      grid-template-columns: 0 1fr 2fr 1fr 0;
+      column-gap: 0;
+    }
+
+    &__sub-titles {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: 461px) and (max-width: 1023px) {
+  .section-items {
+    margin: $indentBig;
+
+    &__form {
+      grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+    }
+
+    &__sub-titles {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-items {
+    &__form {}
+  }
+}
+
+@media (min-width: 461px) and (max-width: 1450px) {
+  .section-items {
+    &__item {
+      border: $borderM solid $yellow;
+    }
+
+    &__send {
+      border: $borderM solid $gray;
+    }
+  }
+}

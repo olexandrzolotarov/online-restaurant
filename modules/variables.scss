@@ -1,0 +1,28 @@
+$yellow: #F8D89C;
+$white: #fff;
+$black: #000;
+$gray: #414141;
+
+$regular: GolosRegular;
+$medium: GolosMedium;
+
+$borderS: 1px;
+$borderM: 2px;
+$borderB: 3px;
+
+$hhs: 65px;
+$hh: 80px; //Высота header
+$hhb: calc(60px + 2vw);
+
+$ich: 35px;
+$ichs: 30px;
+
+$marginContent: calc(15px + 3vw); // Отступ для контента
+$marginContentS: calc(5px + 3vw);
+
+$indent: calc(calc(10px + 0.5vw)); // Внутренний отступ
+$indentBig: calc(calc(10px + 2vw));
+$indentSmall: calc(calc(5px + 0.3vw)); // Маленький внутренний отступ
+
+$gapContent: calc(15px + 5vw); // Gap для блоков контента
+$gapContentS: calc(5px + 3vw);

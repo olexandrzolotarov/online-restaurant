@@ -1,0 +1,33 @@
+@import '../modules/nullStyle.scss';
+@import '../modules/fonts.scss';
+@import '../modules/variables.scss';
+@import '../modules/bootstrap.scss';
+
+
+.section-items {
+  flex: 1 0 auto;
+  margin: 4vw 10vw;
+
+  h3 {
+    margin: $indent 0;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 460px) {
+  .section-items {
+    margin: $indent $indentSmall;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 1023px) {
+  .section-items {
+    margin: $indentBig;
+  }
+}
+
+@media (min-width: 1025px) {}
